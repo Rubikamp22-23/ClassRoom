@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">first app bahar</string>
+    <string name="bahar_is_a_nice_girl">Bahar is a nice girl!</string>
+    <string name="todo">TODO</string>
+    <string name="bahar_s_homework">Bahar\'s homework</string>
+    <string name="TODO">TODO</string>
+    <string name="how_many_stars_would_you_give_this_app">How many stars would you give this app?</string>
+    <string name="internet">Internet</string>
+    <string name="touch_me">touch me</string>
 </resources>
