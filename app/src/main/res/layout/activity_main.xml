@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#DB1C8F"
-    android:backgroundTint="#CF8AE0"
+    android:backgroundTint="#C377DA"
     android:layerType="software"
     android:scrollbarSize="4dp"
     tools:context=".MainActivity">
@@ -13,10 +13,10 @@
     <TextView
         android:id="@+id/textView"
         android:layout_width="171dp"
-        android:layout_height="35dp"
+        android:layout_height="50dp"
         android:layout_marginEnd="8dp"
         android:text="@string/bahar_s_homework"
-        android:textColor="#435A83"
+        android:textColor="#21427C"
         android:textColorHighlight="#E82020"
         android:textColorHint="#2196F3"
         android:textColorLink="#FF9800"
@@ -24,10 +24,10 @@
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.965"
+        app:layout_constraintHorizontal_bias="0.78"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.106" />
+        app:layout_constraintVertical_bias="0.942" />
 
     <ImageView
         android:id="@+id/imageView2"
@@ -137,5 +137,7 @@
 
     <CheckedTextView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="۴dp"
+        tools:layout_editor_absoluteY="۱۶dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
