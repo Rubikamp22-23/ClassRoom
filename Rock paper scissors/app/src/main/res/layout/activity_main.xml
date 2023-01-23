@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:text="Let's Start!"
+        android:textColor="@color/text_color"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/paper_icon_image"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="60dp"
+        android:src="@drawable/paper"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:clickable="true"
+        android:focusable="true"/>
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/scissors_icon_image"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginBottom="60dp"
+        android:src="@drawable/scissors"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/paper_icon_image" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/rock_icon_image"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginBottom="60dp"
+        android:src="@drawable/rock"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/scissors_icon_image" />
+
+    <RelativeLayout
+        android:id="@+id/player_layout"
+        android:layout_width="180dp"
+        android:layout_height="230dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="150dp"
+        android:background="?android:textColorPrimary"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/rock_player"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/rock_player"
+            android:backgroundTint="@color/black"/>
+
+        <ImageView
+            android:id="@+id/paper_player"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/paper_player" />
+
+        <ImageView
+            android:id="@+id/scissors_player"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/scissors_player" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/bot_layout"
+        android:layout_width="180dp"
+        android:layout_height="230dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginEnd="15dp"
+        android:background="?android:textColorPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/paper_bot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/paper_bot" />
+
+        <ImageView
+            android:id="@+id/rock_bot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/rock_bot" />
+
+        <ImageView
+            android:id="@+id/scissors_bot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/scissors_bot" />
+    </RelativeLayout>
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
+        android:layout_marginBottom="20dp"
+        android:color="@color/purple_700"
+        android:text="You"
+        android:textSize="28sp"
+        android:textColor="?colorOnPrimary"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/player_layout"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="80dp"
+        android:layout_marginBottom="20dp"
+        android:color="@color/purple_700"
+        android:text="Bot"
+        android:textSize="28sp"
+        android:textColor="?colorOnPrimary"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/bot_layout"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="-16dp" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
