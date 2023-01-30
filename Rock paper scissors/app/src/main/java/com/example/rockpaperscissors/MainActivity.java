@@ -24,8 +24,6 @@ public class MainActivity extends AppCompatActivity {
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
-        Random random = new Random();
-
 
         binding.paperPlayer.setVisibility(View.INVISIBLE);
         binding.rockPlayer.setVisibility(View.INVISIBLE);
